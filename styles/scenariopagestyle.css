@@ -52,6 +52,8 @@
     background: transparent;
     overflow: visible !important;
   }
+
+  
   
   /* ====== Tooltip Styles ====== */
   .tooltip {
@@ -135,10 +137,11 @@
 
   /*====== Tooltip Mascot ====== */
   .tooltip-mascot {
-    margin-left: 16px; /* отступ слева, чтобы не прилипал к тексту */
+    margin-left: 16px; /* отступ слева, чтобы не прилипал к тултипу */
     width: 64px;
     height: auto;
     flex-shrink: 0;
+    pointer-events: none; /* чтобы не мешал кликам */
   }
   
   /* ====== Tooltip Arrows ====== */
@@ -284,6 +287,8 @@
       padding: 3px 8px;
     }
   }
+  
+
   
   
   

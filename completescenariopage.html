@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/completescenariopage.css">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+    <title>Тренажер 1С-отчетность</title>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+      <div class="logo-and-title">
+        <div class="logo">
+          <img src="assets/icons/logo.svg" alt="Логотип">
+        </div>
+        <div class="header-title">1C-Отчетность</div>
+      </div>
+    </header>
+
+    <div class="header-bottom">
+      <div class="header-bottom-text"></div>
+    </div>
+    <main class="content">
+        <div class="complete-wrapper">
+            <img class="complete-mascot" src="assets/icons/mascotRight.svg" alt="Маскот">
+            <div class="complete-info">
+                <div class="complete-title">
+                    <span class="complete-title-bold">Отлично!<br /></span>
+                    <span class="complete-title-regular">
+                    </span>
+                </div>
+                <div class="complete-subtitle">
+                    Хотите сдавать отчетность без ошибок и с первого раза?<br />
+                    Тогда присоединяйтесь к нашему Telegram-каналу
+                </div>
+                <div class="complete-actions">
+                    <a href="https://t.me/otchetnoct_1c" target="_blank" class="complete-btn complete-btn-blue">Перейти в Телеграм</a>
+                    <a href="index.html" class="complete-btn complete-btn-red">Вернуться на главную</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<script>
+(async function() {
+  const params = new URLSearchParams(window.location.search);
+  const scenarioID = params.get('scenarioID');
+  if (!scenarioID) return;
+  try {
+    const response = await fetch('scenarios.json');
+    const scenarios = await response.json();
+    const scenario = scenarios.find(s => String(s.id) === scenarioID);
+    if (!scenario) return;
+
+    const headerText = document.querySelector('.header-bottom-text');
+    if (headerText && scenario.title) headerText.textContent = scenario.title;
+
+    const completeText = scenario.completeText ? scenario.completeText.replace(/\\n|\\r|\/\/n|<br\s*\/?\s*>/gi, '\n') : '';
+    const regular = document.querySelector('.complete-title-regular');
+    if (regular) regular.textContent = completeText;
+  } catch(e) {
+  }
+})();
+</script>
+</html>

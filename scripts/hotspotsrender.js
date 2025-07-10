@@ -146,13 +146,6 @@ function addHotspot(hs) {
         tooltip.classList.add('tooltip-show');
     }, 10);
 
-    // Добавляем маскота справа от тултипа
-    const mascot = document.createElement('img');
-    mascot.src = 'assets/icons/mascotRight.svg';
-    mascot.alt = 'Маскот';
-    mascot.className = 'tooltip-mascot';
-    hotspotDiv.appendChild(mascot);
-
 
     // Функция для позиционирования tooltip (может принимать новые параметры)
     function positionTooltip(hsArg = hs, positionArg = position, alignArg = align) {
