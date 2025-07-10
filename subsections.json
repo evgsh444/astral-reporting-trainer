@@ -1,0 +1,15 @@
+[
+    {
+      "id": "1cReportAccount",
+      "title": "Личный кабинет 1С-Отчетность",
+      "subsections": [
+        {"title": "Вход в Личный кабинет", "id": "loginToAccount"},
+        {"title": "Подключение ЛК через заявление", "id": "connectAccount"},
+        {"title": "Установка расширения “Фреш”", "id": "installFresh"},
+        {"title": "Установка расширения на локальную версию", "id": "installFreshLocal"},
+        {"title": "Разделы Личного кабинета", "id": "accountSections"},
+        {"title": "Отправка отчетов на ЛК ПРОФ", "id": "sendReportsToProf"},
+        {"title": "Отправка отчетов на ЛК Базовый", "id": "sendReportsToBasic"}
+      ]
+    }
+  ]

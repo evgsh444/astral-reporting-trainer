@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/mainpagestyle.css">
+    <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+    <title>Тренажер 1С-отчетность</title>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+      <div class="logo-and-title">
+        <div class="logo">
+          <img src="assets/icons/logo.svg" alt="Логотип">
+        </div>
+        <div class="header-title">1C-Отчетность</div>
+      </div>
+    </header>
+
+    <div class="header-bottom">
+      <div class="header-bottom-text">Тренажер для пользователей</div>
+    </div>
+  <main class="content">
+      <div class="card-grid">
+        <div class="card">
+          <button class="card-button" disabled">Подключение к 1С Отчетности</button>
+        </div>
+        <div class="card">
+          <button class="card-button" disabled">Работа с ЭЛН по СЭДО СФР (бывший ФСС)</button>
+        </div>
+        <div class="card">
+          <button class="card-button" disabled">Работа с требованиями ФНС</button>
+        </div>
+        <div class="card">
+          <button class="card-button" disabled">Работа с МЧД</button>
+        </div>
+        <div class="card">
+          <button class="card-button" disabled">Создание и отправка НДС</button>
+        </div>
+        <div class="card">
+          <button class="card-button" disabled">Ручное редактирование отчетов</button>
+        </div>
+        <div class="card">
+          <button class="card-button" disabled">Установка сертификата КриптоПроCSP</button>
+        </div>
+        <div class="card">
+          <button class="card-button" disabled">Перенос Базы 1С</button>
+        </div>
+        <div class="card">
+          <button class="card-button" data-id="1cReportAccount">Личный кабинет 1С-Отчетность</button>
+        </div> 
+        <div class="card">
+            <button class="card-button" disabled>Многопользовательский режим</button>
+        </div>
+        <div class="card">
+            <button class="card-button" disabled>Дистанционный перевыпуск сертификата</button>
+        </div>
+        <div class="card">
+            <button class="card-button" disabled>Подключение Промо ЕНС</button>
+        </div>
+
+      </div>
+    </main>
+</body>
+<script>
+    document.querySelector('.card-grid').addEventListener('click', function(e) {
+    if (e.target.classList.contains('card-button') && e.target.dataset.id) {
+      const id = e.target.dataset.id;
+      window.location.href = 'subsections.html?parent=' + id;
+    }
+  });
+  </script>
+</html>

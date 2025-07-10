@@ -1,0 +1,28 @@
+[
+  {
+    "id": "loginToAccount",
+    "name": "Добавление организации",
+    "steps": [
+      {
+        "step": 1,
+        "image": "LK-V-1.svg",
+        "hotspots": 
+        [
+          {
+          "xPercent": 21.2,
+          "yPercent": 58.3,
+          "width": 24.4,
+          "height": 8.9,
+          "tooltipPosition": "bottom",
+          "tooltipAlign": "center",
+          "tooltipTitle": "",
+          "tooltipText": "Первый вариант входа по email. Нажмите «Войти в другой аккаунт»"
+          }
+        ]
+      }
+      ]
+  }
+]
+
+
+
