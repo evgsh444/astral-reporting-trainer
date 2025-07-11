@@ -92,16 +92,16 @@
     gap: clamp(16px, 6vw, 64px);
     height: 100%;
     width: 100%;
-    padding: clamp(8px, 4vw, 48px) clamp(8px, 4vw, 48px);
+    padding: clamp(4px, 2vw, 48px) clamp(8px, 4vw, 48px); /* уменьшен верхний отступ */
     box-sizing: border-box;
   }
 
   .complete-mascot {
     align-self: flex-start;
-    width: clamp(180px, 28vw, 420px); /* увеличено */
+    width: clamp(120px, 20vw, 300px); /* уменьшено для мобильных */
     height: auto;
-    min-width: 120px;                 /* увеличено */
-    max-width: 420px;                 /* увеличено */
+    min-width: 80px;                  /* уменьшено */
+    max-width: 300px;                 /* уменьшено */
   }
 
   .complete-info {
@@ -136,6 +136,7 @@
   font-size: inherit;
   white-space: pre-line;
   font-weight: 400;
+  
 }
 
 .complete-subtitle {
@@ -146,7 +147,7 @@
   line-height: clamp(20px, 2.5vw, 32px);
   font-weight: 400;
   position: relative;
-  width: min(90vw, 544px);
+  width: min(90vw, 100%);
 }
 
 .complete-actions {
@@ -196,11 +197,14 @@
   .complete-wrapper {
     flex-direction: column;
     align-items: center;
-    padding: 4vw 2vw;
-    gap: 24px;
+    padding: 2vw 2vw; /* уменьшен отступ сверху */
+    gap: 16px; /* уменьшен отступ между элементами */
   }
   .complete-mascot {
-    margin-bottom: 16px;
+    margin-bottom: 8px; /* уменьшен отступ снизу */
+    width: clamp(80px, 15vw, 200px); /* еще меньше для мобильных */
+    min-width: 60px;
+    max-width: 200px;
   }
   .complete-info {
     align-items: center;
@@ -210,6 +214,79 @@
   .complete-subtitle {
     width: 100%;
     font-size: 15px;
+  }
+  .content {
+    padding-top: 1%; /* уменьшен отступ сверху */
+    padding-bottom: 1%;
+  }
+}
+
+@media (max-width: 480px) {
+  .complete-wrapper {
+    padding: 1vw 1vw;
+    gap: 12px;
+  }
+  .complete-mascot {
+    width: clamp(60px, 12vw, 120px);
+    min-width: 40px;
+    max-width: 120px;
+    margin-bottom: 2px;
+  }
+  .complete-title {
+    font-size: clamp(14px, 1.5vw, 18px);
+    line-height: clamp(18px, 2vw, 24px);
+  }
+  .complete-subtitle {
+    font-size: clamp(10px, 1vw, 14px);
+    line-height: clamp(14px, 1.5vw, 18px);
+  }
+  .content {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .content {
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 0 !important;
+  }
+  .complete-wrapper {
+    height: auto !important;
+    min-height: unset !important;
+  }
+}
+  
+@media (max-width: 700px) {
+  .complete-btn {
+    padding: 10px 0;
+    font-size: 15px;
+    min-width: 120px;
+    width: 100%;
+    max-width: 220px;
+    border-radius: 16px;
+    margin: 0 2px;
+    box-sizing: border-box;
+  }
+  .complete-actions {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    margin-top: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .complete-btn {
+    padding: 8px 0;
+    font-size: 13px;
+    min-width: 90px;
+    max-width: 160px;
+    border-radius: 12px;
+  }
+  .complete-actions {
+    gap: 6px;
+    margin-top: 10px;
   }
 }
   

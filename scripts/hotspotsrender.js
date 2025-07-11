@@ -7,39 +7,55 @@ function createMascot(position, align, mascotPosition) {
     let mascotClass = '';
     let mascotSrc = '';
     
-    // Маскот всегда сбоку от тултипа (слева или справа)
-    if (mascotPosition === 'left') {
+    // Определяем оптимальную позицию маскота на основе позиции тултипа
+    let optimalMascotPosition = mascotPosition;
+    
+    if (!optimalMascotPosition) {
+        // Автоматически определяем лучшую позицию для маскота
+        if (position === 'right') {
+            optimalMascotPosition = 'left'; // Маскот слева от тултипа
+        } else if (position === 'left') {
+            optimalMascotPosition = 'right'; // Маскот справа от тултипа
+        } else if (position === 'top') {
+            optimalMascotPosition = 'left'; // Маскот слева от тултипа
+        } else if (position === 'bottom') {
+            optimalMascotPosition = 'left'; // Маскот слева от тултипа
+        }
+    }
+    
+    // Выбираем изображение и класс в зависимости от позиции
+    if (optimalMascotPosition === 'left') {
         mascotClass = 'tooltip-mascot-left';
         mascotSrc = 'assets/icons/mascotRight.svg'; // Смотрит вправо (к тултипу)
-    } else if (mascotPosition === 'right') {
+    } else if (optimalMascotPosition === 'right') {
         mascotClass = 'tooltip-mascot-right';
         mascotSrc = 'assets/icons/mascotLeft.svg'; // Смотрит влево (к тултипу)
-    } else {
-        // По умолчанию: если тултип справа от хотспота → маскот слева, иначе справа
-        if (position === 'right') {
-            mascotClass = 'tooltip-mascot-left';
-            mascotSrc = 'assets/icons/mascotRight.svg';
-        } else {
-            mascotClass = 'tooltip-mascot-right';
-            mascotSrc = 'assets/icons/mascotLeft.svg';
-        }
     }
     
     mascot.classList.add(mascotClass);
     mascot.src = mascotSrc;
     mascot.alt = 'Mascot';
+    mascot.dataset.position = optimalMascotPosition;
     
     // Функция для анимации маскота при изменении позиции
     mascot.animateTo = function(newPosition, newAlign, newMascotPosition) {
         mascot.classList.add('tooltip-mascot-animating');
         setTimeout(() => {
             // Обновляем позицию и изображение
+            const newOptimalPosition = newMascotPosition || 
+                (newPosition === 'right' ? 'left' : 
+                 newPosition === 'left' ? 'right' : 'left');
+            
             mascot.className = 'tooltip-mascot';
-            const newMascot = createMascot(newPosition, newAlign, newMascotPosition);
-            if (newMascot) {
-                mascot.className = newMascot.className;
-                mascot.src = newMascot.src;
+            if (newOptimalPosition === 'left') {
+                mascot.classList.add('tooltip-mascot-left');
+                mascot.src = 'assets/icons/mascotRight.svg';
+            } else {
+                mascot.classList.add('tooltip-mascot-right');
+                mascot.src = 'assets/icons/mascotLeft.svg';
             }
+            mascot.dataset.position = newOptimalPosition;
+            
             setTimeout(() => {
                 mascot.classList.remove('tooltip-mascot-animating');
             }, 350);
@@ -235,7 +251,8 @@ function addHotspot(hs) {
     if (hs.showMascot !== false) { // По умолчанию показываем маскота
         const mascot = createMascot(position, align, hs.mascotPosition);
         if (mascot) {
-            hotspotDiv.appendChild(mascot);
+            // Добавляем маскота как дочерний элемент тултипа для правильного позиционирования
+            tooltip.appendChild(mascot);
             // Плавное появление маскота
             setTimeout(() => {
                 mascot.classList.add('mascot-show');

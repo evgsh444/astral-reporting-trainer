@@ -22,7 +22,7 @@
           "tooltipText": "Первый вариант входа по email. Нажмите «Войти в другой аккаунт»",
           "invisible": false,
           "mascotPosition": "left"
-          }
+          } 
         ]
       },
       {
@@ -60,7 +60,7 @@
               "tooltipTitle": "",
               "tooltipText": "Вводим email и пароль и нажимаем «Войти»",
               "invisible": false,
-            "mascotPosition": "left"
+              "mascotPosition": "right"
 
             }
         ]
@@ -138,7 +138,7 @@
             "tooltipTitle": "",
             "tooltipText": "Вы зашли в личный кабинет!",
             "invisible": true,
-            "showMascot": false
+            "mascotPosition": "left"
           }
         ]
       }
@@ -165,7 +165,7 @@
               "tooltipTitle": "",
               "tooltipText": "Нажмите «Настройки»",
               "invisible": false,
-            "mascotPosition": "right"
+              "mascotPosition": "left"
             }
           ]
       },
@@ -219,7 +219,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Подключить»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -308,7 +308,7 @@
             "tooltipTitle": "",
             "tooltipText": "Введите данные, которые вы указали при подключении. Нажмите «Войти»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -344,7 +344,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Да»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -470,7 +470,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Настроить автоматически»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -569,7 +569,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Да»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -617,7 +617,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Да»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -715,7 +715,7 @@
             "tooltipTitle": "",
             "tooltipText": "Откроем пункт \"Личный кабинет 1С-Отчетность\"",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -733,7 +733,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Установка расширения»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -787,7 +787,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Администрирование»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -823,7 +823,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Расширения»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -841,7 +841,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Добавить из файла»",   
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1076,7 +1076,7 @@
             "tooltipTitle": "",
             "tooltipText": "Выберите созданную группу",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1148,7 +1148,7 @@
             "tooltipTitle": "",
             "tooltipText": "Черновики - отчёты, которые созданы, но не отправлены",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1214,7 +1214,7 @@
             "tooltipTitle": "",
             "tooltipText": "На вкладке «Требования» находятся все требования, которые поступили в адрес организаций<br><br>Здесь можно отслеживать статусы требований, сроки по ответам, а также статусы ответов на требования",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1232,7 +1232,7 @@
             "tooltipTitle": "",
             "tooltipText": "На вкладке «Письма» находятся входящие и отправленные письма, а также рассылка от контролирующих органов",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1250,7 +1250,7 @@
             "tooltipTitle": "",
             "tooltipText": "На вкладке «Запросы» находятся входящие выписки ЕГРЮЛ/ЕГРИП и Макеты ПД (пенсионных дел)<br><br>Вернемся на главную страницу",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1401,7 +1401,7 @@
             "tooltipTitle": "",
             "tooltipText": "Отправка отчёта с подписанием в Личном кабинете (ЛК ПРОФ)<br><br>Нажмите «Создать»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1419,7 +1419,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Расчёт по страховым взносам»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1455,7 +1455,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Записать»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           },
           {
             "xPercent": 9.1,
@@ -1467,7 +1467,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «1С-отчетность»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1521,7 +1521,7 @@
             "tooltipTitle": "",
             "tooltipText": "Документ был отправлен. Чтобы посмотреть отчёт перейдите в «Отправленные»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1556,7 +1556,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Обновить» для обмена информацией с Личным кабинетом и расшифровкой входящих сообщений",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1655,7 +1655,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Декларация по НДС»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           }
         ]
       },
@@ -1691,7 +1691,7 @@
             "tooltipTitle": "",
             "tooltipText": "Нажмите «Записать»",
             "invisible": false,
-            "mascotPosition": "left"
+            "mascotPosition": "right"
           },
           {
             "xPercent": 36.9,
