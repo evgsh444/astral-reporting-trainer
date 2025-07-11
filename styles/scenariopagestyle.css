@@ -137,11 +137,41 @@
 
   /*====== Tooltip Mascot ====== */
   .tooltip-mascot {
-    margin-left: 16px; /* отступ слева, чтобы не прилипал к тултипу */
-    width: 64px;
+    position: absolute;
+    width: 100px; /* Увеличили размер с 64px до 80px */
     height: auto;
     flex-shrink: 0;
     pointer-events: none; /* чтобы не мешал кликам */
+    z-index: 4; /* выше тултипа */
+    transition: opacity 0.6s cubic-bezier(.4,0,.2,1), transform 0.6s cubic-bezier(.4,0,.2,1);
+    opacity: 0;
+  }
+
+  .tooltip-mascot.mascot-show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Позиции маскота относительно тултипа */
+.tooltip-mascot-left {
+  right: 100%;
+  top: 0%; /* Подняли маскота выше (было 50%) */
+  transform: translateY(-50%);
+  margin-right: 30px; /* Увеличили расстояние с 12px до 20px */
+}
+
+.tooltip-mascot-right {
+  left: 100%;
+  top: 30%; /* Подняли маскота выше (было 50%) */
+  transform: translateY(-50%);
+  margin-left: 20px; /* Увеличили расстояние с 12px до 20px */
+}
+
+  /* Анимация для маскота */
+  .tooltip-mascot-animating {
+    transition: left 0.35s cubic-bezier(.4,0,.2,1), top 0.35s cubic-bezier(.4,0,.2,1), opacity 0.2s;
+    opacity: 0.7;
+    pointer-events: none;
   }
   
   /* ====== Tooltip Arrows ====== */
@@ -323,11 +353,40 @@
     .tooltip-actions .next {
       padding: 3px 8px;
     }
+    .tooltip-mascot {
+      width: 60px; /* Увеличили размер на мобильных с 48px до 60px */
+    }
+    .tooltip-mascot-left {
+      margin-right: 16px; /* Немного уменьшили расстояние на мобильных */
+      top: 25%; /* Еще выше на мобильных */
+    }
+    .tooltip-mascot-right {
+      margin-left: 16px; /* Немного уменьшили расстояние на мобильных */
+      top: 25%; /* Еще выше на мобильных */
+    }
   }
   
-
+  /* Дополнительные стили для очень маленьких экранов */
+  @media (max-width: 480px) {
+    .tooltip-mascot {
+      width: 50px; /* Еще меньше для очень маленьких экранов */
+    }
+    .tooltip-mascot-left {
+      margin-right: 12px;
+    }
+    .tooltip-mascot-right {
+      margin-left: 12px;
+    }
+  }
   
-  
-  
-  
-  
+  @media (max-width: 360px) {
+    .tooltip-mascot {
+      width: 45px; /* Минимальный размер для очень маленьких экранов */
+    }
+    .tooltip-mascot-left {
+      margin-right: 8px;
+    }
+    .tooltip-mascot-right {
+      margin-left: 8px;
+    }
+  }

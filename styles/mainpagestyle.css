@@ -123,46 +123,7 @@ body {
 }
 
 /* Медиа-запрос для мобильных устройств */
-@media (max-width: 768px) {
-  .card-button {
-    font-size: 18px;
-    padding: 12px 0;
-  }
-  
-  .exit-card-button {
-    font-size: 18px;
-    padding: 12px 0;
-  }
-  
-  .header-title {
-    font-size: calc(12px + (18 - 12) * ((100vw - 375px) / (768 - 375)));
-  }
-  
-  .header-bottom-text {
-    font-size: calc(10px + (16 - 10) * ((100vw - 375px) / (768 - 375)));
-  }
-}
 
-/* Медиа-запрос для очень маленьких экранов */
-@media (max-width: 480px) {
-  .card-button {
-    font-size: 16px;
-    padding: 10px 0;
-  }
-  
-  .exit-card-button {
-    font-size: 16px;
-    padding: 10px 0;
-  }
-  
-  .header-title {
-    font-size: 14px;
-  }
-  
-  .header-bottom-text {
-    font-size: 12px;
-  }
-}
 
 .card:hover {
   background-color: #FF4746;
@@ -203,4 +164,57 @@ body {
   background-color: #FFFFFF;
   color: #444444;
   font-weight: 700;
+}
+
+.logo img, .card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .card-button {
+    font-size: 18px;
+    padding: 12px 0;
+  }
+  
+  .exit-card-button {
+    font-size: 16px;
+    padding: 12px 0;
+  }
+  
+  .header-title {
+    font-size: calc(12px + (18 - 12) * ((100vw - 375px) / (768 - 375)));
+  }
+  
+  .header-bottom-text {
+    font-size: calc(10px + (16 - 10) * ((100vw - 375px) / (768 - 375)));
+  }
+  .card img {
+    max-width: 80%;
+  }
+}
+
+/* Медиа-запрос для очень маленьких экранов */
+@media (max-width: 480px) {
+  .card-button {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  
+  .exit-card-button {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  
+  .header-title {
+    font-size: 14px;
+  }
+  
+  .header-bottom-text {
+    font-size: 12px;
+  }
+  .card img {
+    max-width: 70%;
+  }
 }
