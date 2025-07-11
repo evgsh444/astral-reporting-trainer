@@ -137,11 +137,42 @@
 
   /*====== Tooltip Mascot ====== */
   .tooltip-mascot {
-    margin-left: 16px; /* отступ слева, чтобы не прилипал к тултипу */
-    width: 64px;
+    position: absolute;
+    width: 140px;
     height: auto;
     flex-shrink: 0;
     pointer-events: none; /* чтобы не мешал кликам */
+    z-index: 4; /* выше тултипа */
+    transition: opacity 0.6s cubic-bezier(.4,0,.2,1), transform 0.6s cubic-bezier(.4,0,.2,1);
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  .tooltip-mascot.mascot-show {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Позиции маскота относительно тултипа */
+  .tooltip-mascot-left {
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 20px;
+  }
+
+  .tooltip-mascot-right {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+  }
+
+  /* Анимация для маскота */
+  .tooltip-mascot-animating {
+    transition: all 0.35s cubic-bezier(.4,0,.2,1);
+    opacity: 0.7;
+    pointer-events: none;
   }
   
   /* ====== Tooltip Arrows ====== */
@@ -323,11 +354,38 @@
     .tooltip-actions .next {
       padding: 3px 8px;
     }
+    .tooltip-mascot {
+      width: 80px;
+    }
+    .tooltip-mascot-left {
+      margin-right: 15px;
+    }
+    .tooltip-mascot-right {
+      margin-left: 15px;
+    }
   }
   
-
+  /* Дополнительные стили для очень маленьких экранов */
+  @media (max-width: 480px) {
+    .tooltip-mascot {
+      width: 70px;
+    }
+    .tooltip-mascot-left {
+      margin-right: 12px;
+    }
+    .tooltip-mascot-right {
+      margin-left: 12px;
+    }
+  }
   
-  
-  
-  
-  
+  @media (max-width: 360px) {
+    .tooltip-mascot {
+      width: 60px;
+    }
+    .tooltip-mascot-left {
+      margin-right: 10px;
+    }
+    .tooltip-mascot-right {
+      margin-left: 10px;
+    }
+  }
