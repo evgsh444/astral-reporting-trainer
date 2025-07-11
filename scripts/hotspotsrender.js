@@ -21,11 +21,8 @@ function addHotspot(hs) {
         }, 350);
     };
 
-    hotspotDiv.addEventListener('click', function(e) {
-        if (e.target === hotspotDiv) {
-            nextStep();
-        }
-    });
+
+
     
     const position = hs.tooltipPosition || 'top'; // top, bottom, left, right
     const align = hs.tooltipAlign || 'center'; // start, center, end
@@ -34,7 +31,7 @@ function addHotspot(hs) {
     // Классы для тултипа и стрелки
     const tooltip = document.createElement('div');
     tooltip.className = `tooltip tooltip-${position} tooltip-${position}-${align}`;
-    tooltip.textContent = text;
+    tooltip.innerHTML = text; // Изменено с textContent на innerHTML
     tooltip.dataset.position = position;
     tooltip.dataset.align = align;
     tooltip.style.position = 'absolute';
@@ -47,7 +44,7 @@ function addHotspot(hs) {
             // Меняем текст и заголовок
             if (typeof newText === 'string') {
                 const p = tooltip.querySelector('p');
-                if (p) p.textContent = newText;
+                if (p) p.innerHTML = newText; // Изменено с textContent на innerHTML
             }
             if (typeof newTitle === 'string') {
                 const t = tooltip.querySelector('.tooltip-title');
@@ -82,14 +79,27 @@ function addHotspot(hs) {
 
     let tooltipContent = '';
     const titleHtml = hs.tooltipTitle ? `<div class="tooltip-title">${hs.tooltipTitle}</div>` : '';
+    
+    // Определяем текст кнопки только для невидимых хотспотов
+    let buttonText = '';
+    if (hs.invisible === true) {
+        buttonText = currentStep < currentScenario.totalSteps  ? 'Далее' : 'Завершить';
+    }
+    const buttonAction = 'nextStep()';
+    
+    // Определяем, нужно ли показывать стрелку
+    const showArrow = hs.invisible !== true;
+    const arrowHtml = showArrow ? `<div class="tooltip-arrow ${arrowClass}"></div>` : '';
+    
     if (position === 'top') {
         tooltipContent = `
-            <div class="tooltip-arrow ${arrowClass}"></div>
+            ${arrowHtml}
             <div class="tooltip-inner">
                 ${titleHtml}
                 <p>${hs.tooltipText || 'Tooltip'}</p>
                 <div class="tooltip-actions">
                     <button class="prev" onclick="prevStep()">Назад</button>
+                    ${hs.invisible === true ? `<button class="next" onclick="${buttonAction}">${buttonText}</button>` : ''}
                 </div>
             </div>
         `;
@@ -100,18 +110,20 @@ function addHotspot(hs) {
                 <p>${hs.tooltipText || 'Tooltip'}</p>
                 <div class="tooltip-actions">
                     <button class="prev" onclick="prevStep()">Назад</button>
+                    ${hs.invisible === true ? `<button class="next" onclick="${buttonAction}">${buttonText}</button>` : ''}
                 </div>
             </div>
-            <div class="tooltip-arrow ${arrowClass}"></div>
+            ${arrowHtml}
         `;
     } else if (position === 'left') {
         tooltipContent = `
-            <div class="tooltip-arrow ${arrowClass}"></div>
+            ${arrowHtml}
             <div class="tooltip-inner">
                 ${titleHtml}
                 <p>${hs.tooltipText || 'Tooltip'}</p>
                 <div class="tooltip-actions">
                     <button class="prev" onclick="prevStep()">Назад</button>
+                    ${hs.invisible === true ? `<button class="next" onclick="${buttonAction}">${buttonText}</button>` : ''}
                 </div>
             </div>
         `;
@@ -122,9 +134,10 @@ function addHotspot(hs) {
                 <p>${hs.tooltipText || 'Tooltip'}</p>
                 <div class="tooltip-actions">
                     <button class="prev" onclick="prevStep()">Назад</button>
+                    ${hs.invisible === true ? `<button class="next" onclick="${buttonAction}">${buttonText}</button>` : ''}
                 </div>
             </div>
-            <div class="tooltip-arrow ${arrowClass}"></div>
+            ${arrowHtml}
         `;
     } else {
         tooltipContent = `
@@ -133,10 +146,28 @@ function addHotspot(hs) {
                 <p>${hs.tooltipText || 'Tooltip'}</p>
                 <div class="tooltip-actions">
                     <button class="prev" onclick="prevStep()">Назад</button>
+                    ${hs.invisible === true ? `<button class="next" onclick="${buttonAction}">${buttonText}</button>` : ''}
                 </div>
             </div>
         `;
     }
+    if(hs.invisible === false)
+        {
+            hotspotDiv.addEventListener('click', function(e) {
+                if (e.target === hotspotDiv) {
+                    nextStep();
+                }
+            });
+        }
+
+        if (hs.invisible === true) {
+            hotspotDiv.style.background = 'transparent';
+            hotspotDiv.style.border = 'none';
+            hotspotDiv.style.boxShadow = 'none';
+            hotspotDiv.style.animation = 'none';
+        }
+
+
 
     tooltip.innerHTML = tooltipContent;
     hotspotDiv.appendChild(tooltip);

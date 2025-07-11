@@ -65,7 +65,8 @@ function enableHotspotEditor() {
         "tooltipPosition": "top",
         "tooltipAlign": "center",
         "tooltipTitle": "",
-        "tooltipText": ""
+        "tooltipText": "",
+        "invisible": false
         }`;
       console.log(jsonStr);
 

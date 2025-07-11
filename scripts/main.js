@@ -29,7 +29,10 @@ async function loadScenario() {
 
   try {
     const scenarios = await loadScenarios();
+    console.log('All scenarios:', scenarios);
+    console.log('Looking for scenario with id:', id);
     const scenario = scenarios.find(s => String(s.id) === id);
+    console.log('Found scenario:', scenario);
     return scenario || null; 
   } catch (err) {
     console.error('Ошибка при загрузке сценария:', err);
@@ -125,19 +128,30 @@ function displayCurrentStep() {
 
 function nextStep() {
   const stepData = currentScenario.steps.find(step => step.step === currentStep);
-  if (stepData && stepData.hotspots && stepData.hotspots.length > 1 && currentHotspotIndex < stepData.hotspots.length - 1) {
+
+  // Если это последний хотспот последнего шага — только тогда завершаем
+  if (
+    currentStep === currentScenario.totalSteps &&
+    currentHotspotIndex === stepData.hotspots.length - 1
+  ) {
+    localStorage.removeItem('hotspot-step');
+    window.location.href = "completescenariopage.html?scenarioID=" + encodeURIComponent(currentScenario.id);
+    return;
+  }
+
+  // Если есть ещё хотспоты в этом шаге
+  if (stepData && stepData.hotspots && currentHotspotIndex < stepData.hotspots.length - 1) {
     currentHotspotIndex++;
     displayCurrentStep();
     return;
   }
+
+  // Если есть ещё шаги
   if (currentStep < currentScenario.totalSteps) {
     currentStep++;
     currentHotspotIndex = 0;
     displayCurrentStep();
-  }
-  if (currentStep === currentScenario.totalSteps && currentHotspotIndex === currentScenario.steps[currentStep - 1].hotspots.length - 1) {
-      localStorage.removeItem('hotspot-step');
-      window.location.href = "completescenariopage.html?scenarioID=" + encodeURIComponent(currentScenario.id);
+    return;
   }
 }
 
@@ -149,6 +163,14 @@ function prevStep() {
     displayCurrentStep();
     return;
   }
+  
+  // Если мы на первом шаге, переходим обратно на subsections.html
+  if (currentStep === 1) {
+    localStorage.removeItem('hotspot-step');
+    window.location.href = "subsections.html?parent=" + encodeURIComponent(currentScenario.scenarioCategory);
+    return;
+  }
+  
   if (currentStep > 1) {
     currentStep--;
     const prevStepData = currentScenario.steps.find(step => step.step === currentStep);

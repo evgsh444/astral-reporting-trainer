@@ -53,7 +53,7 @@
     overflow: visible !important;
   }
 
-  
+
   
   /* ====== Tooltip Styles ====== */
   .tooltip {
@@ -273,6 +273,36 @@
     }
     100% {
       box-shadow: 0 0 8px 0 rgba(255, 255, 255, 1); 
+    }
+  }
+
+  @keyframes hotspotPulseScale {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+  @keyframes hotspotPulseAttention {
+    0% {
+      opacity: 1;
+      box-shadow: 0 0 8px 0 rgb(201, 29, 55);
+    }
+    50% {
+      opacity: 0.7;
+      box-shadow: 0 0 16px 0 rgb(201, 29, 55), 0 0 24px 0 rgba(201, 29, 55, 0.5);
+    }
+    100% {
+      opacity: 1;
+      box-shadow: 0 0 8px 0 rgb(201, 29, 55);
     }
   }
   

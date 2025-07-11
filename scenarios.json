@@ -2,8 +2,9 @@
   {
     "id": "loginToAccount",
     "title": "Личный кабинет 1С-Отчетность",
-    "name": "Добавление организации",
-    "completeText": "Теперь вы знаете, как зайти в //n Личный кабинет 1С-Отчетность.",
+    "name": "Вход в личный кабинет",
+    "completeText": "Теперь вы знаете, как зайти в  Личный кабинет 1С-Отчетность.",
+    "scenarioCategory": "1cReportAccount",
     "steps": [
       {
         "step": 1,
@@ -18,11 +19,1675 @@
           "tooltipPosition": "bottom",
           "tooltipAlign": "center",
           "tooltipTitle": "",
-          "tooltipText": "Первый вариант входа по email. Нажмите «Войти в другой аккаунт»"
+          "tooltipText": "Первый вариант входа по email. Нажмите «Войти в другой аккаунт»",
+          "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "image": "LK-V-2.svg",
+        "hotspots": 
+        [
+          {
+            "xPercent": 38.9,
+            "yPercent": 32.3,
+            "width": 4.0,
+            "height": 3.4,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Выбираем «По email»",
+            "invisible": false
+            }
+        ]
+      },
+      {
+        "step": 3,
+        "image": "LK-V-3.svg",
+        "hotspots":
+        [
+          {
+            "xPercent": 21.2,
+            "yPercent": 50.5,
+            "width": 6.5,
+            "height": 5.8,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Вводим email и пароль и нажимаем «Войти»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "image": "LK-V-4.svg",
+        "hotspots":
+        [
+          {
+            "xPercent": 21.7,
+            "yPercent": 59.2,
+            "width": 23.4,
+            "height": 7.1,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Второй вариант входа - по сертификату. Нажмите «Войти в другой аккаунт»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "image": "LK-V-5.svg",
+        "hotspots":
+        [
+          {
+            "xPercent": 18.7,
+            "yPercent": 70.7,
+            "width": 18.9,
+            "height": 5.0,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Выбираем «Сертификат»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "image": "LK-V-6.svg",
+        "hotspots":
+        [
+          {
+            "xPercent": 20.9,
+            "yPercent": 60.5,
+            "width": 9.2,
+            "height": 5.6,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Выбираем «Сертификат» и нажимаем кнопку «Войти»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "image": "LK-V-7.svg",
+        "hotspots":
+        [
+          {
+            "xPercent": 31.0,
+            "yPercent": 56.6,
+            "width": 39.1,
+            "height": 36.8,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Вы зашли в личный кабинет!",
+            "invisible": true
           }
         ]
       }
       ]
+  },
+  {
+    "id": "connectAccount",
+    "title": "Личный кабинет 1С-Отчетность",
+    "name": "Подключение ЛК через заявление",
+    "completeText": "Теперь вы знаете, как подключить//n Личный кабинет через заявление.",
+    "scenarioCategory": "1cReportAccount",
+    "steps": [
+      {
+          "step": 1,
+          "image": "LK-C-1.svg",
+          "hotspots": [
+            {
+              "xPercent": 59.5,
+              "yPercent": 9.6,
+              "width": 4.3,
+              "height": 3.8,
+              "tooltipPosition": "bottom",
+              "tooltipAlign": "center",
+              "tooltipTitle": "",
+              "tooltipText": "Нажмите «Настройки»",
+              "invisible": false
+            }
+          ]
+      },
+      {
+        "step": 2,
+        "image": "LK-C-2.svg",
+        "hotspots": [
+          {
+            "xPercent": 31.0,
+            "yPercent": 18.2,
+            "width": 21.8,
+            "height": 2.6,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Заявление на продление» / «Заявление на подключение»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "image": "LK-C-3.svg",
+        "hotspots": [
+          {
+            "xPercent": 10.3,
+            "yPercent": 26.1,
+            "width": 2.0,
+            "height": 2.8,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Поставьте галочку «Личный кабинет»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "image": "LK-C-4.svg",
+        "hotspots":  [
+          {
+            "xPercent": 17.0,
+            "yPercent": 25.8,
+            "width": 4.8,
+            "height": 3.5,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Подключить»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "image": "LK-C-5.svg",
+        "hotspots": [
+          {
+            "xPercent": 38.3,
+            "yPercent": 53.6,
+            "width": 7.9,
+            "height": 2.8,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Введите email и пароль. И нажмите «Создать аккаунт» ",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "image": "LK-C-6.svg",
+        "hotspots": [
+          {
+            "xPercent": 36.2,
+            "yPercent": 41.9,
+            "width": 25.1,
+            "height": 18.4,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Проверьте входящие письма указанной электронной почты",
+            "invisible": true
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "image": "LK-C-7.svg",
+        "hotspots":[
+          {
+            "xPercent": 30.6,
+            "yPercent": 54.0,
+            "width": 9.5,
+            "height": 5.8,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Подтвердить»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 8,
+        "image": "LK-C-8.svg",
+        "hotspots":[
+          {
+            "xPercent": 20.6,
+            "yPercent": 52.5,
+            "width": 10.5,
+            "height": 5.7,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Продолжить»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 9,
+        "image": "LK-C-9.svg",
+        "hotspots": [
+          {
+            "xPercent": 23.2,
+            "yPercent": 42.2,
+            "width": 7.5,
+            "height": 5.1,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Введите данные, которые вы указали при подключении. Нажмите «Войти»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 10,
+        "image": "LK-C-10.svg",
+        "hotspots": [
+          {
+            "xPercent": 23.2,
+            "yPercent": 63.1,
+            "width": 12.1,
+            "height": 5.8,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Перейти в 1С-Отчетность»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 11,
+        "image": "LK-C-11.svg",
+        "hotspots": [
+          {
+            "xPercent": 52.2,
+            "yPercent": 51.6,
+            "width": 4.4,
+            "height": 4.2,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Да»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 12,
+        "image": "LK-C-12.svg",
+        "hotspots": [
+          {
+            "xPercent": 54.3,
+            "yPercent": 53.6,
+            "width": 4.0,
+            "height": 3.2,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «ОК»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 13,
+        "image": "LK-C-13.svg",
+        "hotspots": [
+          {
+            "xPercent": 22.4,
+            "yPercent": 29.2,
+            "width": 10.7,
+            "height": 3.7,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Необходимо заполнить псевдоним продукта",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 14,
+        "image": "LK-C-14.svg",
+        "hotspots": [
+          {
+            "xPercent": 22.05,
+            "yPercent": 46.2,
+            "width": 1.6,
+            "height": 2.7,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Поставьте галочку «Без подписания»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 15,
+        "image": "LK-C-15.svg",
+        "hotspots": [
+          {
+            "xPercent": 89.5,
+            "yPercent": 95.8,
+            "width": 4.5,
+            "height": 3.0,
+            "tooltipPosition": "top",
+            "tooltipAlign": "end",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Далее»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 16,
+        "image": "LK-C-16.svg",
+        "hotspots": [
+          {
+            "xPercent": 84.7,
+            "yPercent": 95.7,
+            "width": 9.4,
+            "height": 3.2,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Отправить заявление»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 17,
+        "image": "LK-C-17.svg",
+        "hotspots": [
+          {
+            "xPercent": 38.3,
+            "yPercent": 3.1,
+            "width": 1.4,
+            "height": 2.5,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Закройте страницу. Заявка будет обработана вашей  обслуживающей организацией",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 18,
+        "image": "LK-C-18.svg",
+        "hotspots": [
+          {
+            "xPercent": 35.1,
+            "yPercent": 61.7,
+            "width": 10.7,
+            "height": 3.4,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Настроить автоматически»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 19,
+        "image": "LK-C-19.svg",
+        "hotspots": [
+          {
+            "xPercent": 61.5,
+            "yPercent": 63.2,
+            "width": 5.1,
+            "height": 3.2,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Закрыть»",
+            "invisible": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "installFresh",
+    "title": "Личный кабинет 1С-Отчетность",
+    "name": "Установка расширения “Фреш”",
+    "completeText": "Теперь вы знаете, //n как установить расширение в Fresh",
+    "scenarioCategory": "1cReportAccount",
+    "steps": [
+      {
+        "step": 1,
+        "image": "Fresh-1.svg",
+        "hotspots": [
+          {
+            "xPercent": 45.7,
+            "yPercent": 38.5,
+            "width": 7.6,
+            "height": 3.0,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите на «Магазин расширений»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "image": "Fresh-2.svg",
+        "hotspots": [
+          {
+            "xPercent": 10.6,
+            "yPercent": 20.2,    "id": "installFresh",
+            "title": "Личный кабинет 1С-Отчетность",
+            "name": "Установка расширения “Фреш”",
+            "completeText": "Теперь вы знаете, //n как установить расширение в Fresh",
+            "scenarioCategory": "1cReportAccount",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Введите в поиск Личный кабинет и нажмите на строчку, которая вышла по поиску",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "image": "Fresh-3.svg",
+        "hotspots": [
+          {
+            "xPercent": 70.7,
+            "yPercent": 28.7,
+            "width": 10.8,
+            "height": 3.5,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Установить»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "image": "Fresh-4.svg",
+        "hotspots": [
+          {
+            "xPercent": 55.75,
+            "yPercent": 56.9,
+            "width": 4.0,
+            "height": 3.3,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Да»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "image": "Fresh-5.svg",
+        "hotspots": [
+          {
+            "xPercent": 57.6,
+            "yPercent": 77.7,
+            "width": 1.6,
+            "height": 3.1,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Поставьте галочку «ознакомлен и согласен»",
+            "invisible": false
+          },
+          {
+            "xPercent": 73.8,
+            "yPercent": 80.1,
+            "width": 5.0,
+            "height": 3.2,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Продолжить»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "image": "Fresh-6.svg",
+        "hotspots": [
+          {
+            "xPercent": 52.9,
+            "yPercent": 53.4,
+            "width": 4.0,
+            "height": 4.0,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Да»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "image": "Fresh-7.svg",
+        "hotspots": [
+          {
+            "xPercent": 44.9,
+            "yPercent": 53.5,
+            "width": 8.3,
+            "height": 3.6,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Завершить работу»",
+            "invisible": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "installFreshLocal",
+    "title": "Личный кабинет 1С-Отчетность",
+    "name": "Установка расширения на локальную версию”",
+    "completeText": "Теперь вы знаете, как установить //n расширение на локальную версию",
+    "scenarioCategory": "1cReportAccount",
+    "steps": [
+      {
+        "step": 1,
+        "image": "Fresh-Local-1.svg",
+        "hotspots": [
+          {
+            "xPercent": 32.1,
+            "yPercent": 19.7,
+            "width": 31.9,
+            "height": 34.6,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Заходим на сайт Астрал https://astral.ru/products/1c-otchetnost/ и идём в самый низ сайта",
+            "invisible": true
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "image": "Fresh-Local-2.svg",
+        "hotspots": [
+          {
+            "xPercent": 49.4,
+            "yPercent": 41.5,
+            "width": 7.4,
+            "height": 3.1,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Выбираем  «База знаний»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "image": "Fresh-Local-3.svg",
+        "hotspots": [
+          {
+            "xPercent": 22.7,
+            "yPercent": 69.5,
+            "width": 9.1,
+            "height": 4.5,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Выбираем  «1С-Отчетность»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "image": "Fresh-Local-4.svg",
+        "hotspots": [
+          {
+            "xPercent": 6.1,
+            "yPercent": 70.6,
+            "width": 20.0,
+            "height": 3.2,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Откроем пункт \"Личный кабинет 1С-Отчетность\"",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "image": "Fresh-Local-5.svg",
+        "hotspots": [
+          {
+            "xPercent": 6.1,
+            "yPercent": 73.5,
+            "width": 19.9,
+            "height": 5.3,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Установка расширения»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "image": "Fresh-Local-6.svg",
+        "hotspots": [
+          {
+            "xPercent": 30.8,
+            "yPercent": 56.5,
+            "width": 10.7,
+            "height": 2.8,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Скачать расширение»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "image": "Fresh-Local-7.svg",
+        "hotspots": [
+          {
+            "xPercent": 27.9,
+            "yPercent": 77.8,
+            "width": 10.3,
+            "height": 2.8,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Находим версию под свою конфигурацию и релиз и нажимаем «Скачать расширение»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 8,
+        "image": "Fresh-Local-8.svg",
+        "hotspots": [
+          {
+            "xPercent": 0.2,
+            "yPercent": 44.8,
+            "width": 9.2,
+            "height": 2.9,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Администрирование»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 9,
+        "image": "Fresh-Local-9.svg",
+        "hotspots": [
+          {
+            "xPercent": 29.0,
+            "yPercent": 40.3,
+            "width": 12.3,
+            "height": 2.8,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Печатные формы, отчёты и обработки»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 10,
+        "image": "Fresh-Local-10.svg",
+        "hotspots": [
+          {
+            "xPercent": 9.8,
+            "yPercent": 45.2,
+            "width": 5.1,
+            "height": 2.5,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Расширения»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 11,
+        "image": "Fresh-Local-11.svg",
+        "hotspots": [
+          {
+            "xPercent": 9.8,
+            "yPercent": 9.3,
+            "width": 8.9,
+            "height": 3.4,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Добавить из файла»",   
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 12,
+        "image": "Fresh-Local-12.svg",
+        "hotspots": [
+          {
+            "xPercent": 53.5,
+            "yPercent": 54.8,
+            "width": 5.6,
+            "height": 2.7,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Продолжить»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 13,
+        "image": "Fresh-Local-13.svg",
+        "hotspots": [
+          {
+            "xPercent": 59.5,
+            "yPercent": 70.3,
+            "width": 5.1,
+            "height": 3.0,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Выбираем расширение и нажимаем «Открыть»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 14,
+        "image": "Fresh-Local-14.svg",
+        "hotspots": [
+          {
+            "xPercent": 63.7,
+            "yPercent": 26.1,
+            "width": 1.7,
+            "height": 2.9,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Снимаем галочку с безопасного режима",
+            "invisible": false
+          },
+          {
+            "xPercent": 36.9,
+            "yPercent": 15.4,
+            "width": 5.1,
+            "height": 2.3,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Перезапустить»",
+            "invisible": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "accountSections",
+    "title": "Личный кабинет 1С-Отчетность",
+    "name": "Разделы Личного кабинета”",
+    "completeText": "Теперь вы знаете, какие есть //n разделы личного кабинета",
+    "scenarioCategory": "1cReportAccount",
+    "steps": [
+      {
+        "step": 1,
+        "image": "Acc-Sec-1.svg",
+        "hotspots": [
+          {
+            "xPercent": 0.1,
+            "yPercent": 24.8,
+            "width": 15.8,
+            "height": 5.4,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "На вкладке «Главная» находится список дел в котором отображается:<br><br>  - общая информация по организациям  <br>  - информация о заканчивающихся лицензиях или сертификатах <br> - требования, на которые не предоставлен ответ, а так же сроки на ответ <br> - важные уведомления",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "image": "Acc-Sec-2.svg",
+        "hotspots": [
+          {
+            "xPercent": 46.5,
+            "yPercent": 30.6,
+            "width": 23.8,
+            "height": 40.4,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "На вкладке «Календарь бухгалтера» отображается:<br><br> - Все отчёты по всем организациям<br> - Информация о статусах<br> - Конкретная информация по отправленному отчёту",
+            "invisible": true
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "image": "Acc-Sec-3.svg",
+        "hotspots": [
+          {
+            "xPercent": 97.0,
+            "yPercent": 17.8,
+            "width": 2.2,
+            "height": 3.6,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Значок», чтобы узнать обо всех возможных статусах",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "image": "Acc-Sec-4.svg",
+        "hotspots": [
+          {
+            "xPercent": 68.4,
+            "yPercent": 28.0,
+            "width": 26.0,
+            "height": 17.5,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Все статусы и расшифровка значков отображаются в этой подсказке",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "image": "Acc-Sec-5.svg",
+        "hotspots": [
+          {
+            "xPercent": 53.3,
+            "yPercent": 36.8,
+            "width": 4.5,
+            "height": 4.4,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите на «Отчёт», чтобы узнать информацию об отправленном отчёте",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "image": "Acc-Sec-6.svg",
+        "hotspots": [
+          {
+            "xPercent": 67.9,
+            "yPercent": 28.9,
+            "width": 17.4,
+            "height": 4.8,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите на «Отчёт», чтобы узнать подробнее",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "image": "Acc-Sec-7.svg",
+        "hotspots": [
+          {
+            "xPercent": 50.5,
+            "yPercent": 25.8,
+            "width": 15.9,
+            "height": 26.8,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Все сообщения цикла обмена доступны для просмотра и печати из личного кабинета",
+            "invisible": true
+          }
+        ]
+      },
+      {
+        "step": 8,
+        "image": "Acc-Sec-8.svg",
+        "hotspots": [
+          {
+            "xPercent": 4.3,
+            "yPercent": 24,
+            "width": 10.2,
+            "height": 3.7,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Можно группировать информацию по группам. Нажмите «Все огранизации»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 9,
+        "image": "Acc-Sec-9.svg",
+        "hotspots": [
+          {
+            "xPercent": 4.8,
+            "yPercent": 31.3,
+            "width": 11.5,
+            "height": 3.1,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Выберите созданную группу",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 10,
+        "image": "Acc-Sec-10.svg",
+        "hotspots": [
+          {
+            "xPercent": 50.65,
+            "yPercent": 17.7,
+            "width": 2.1,
+            "height": 3.7,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Также можно отобразить информацию за определённый год, определённый квартал года, а также по форме организации<br><br>Перейдите в настройки",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 11,
+        "image": "Acc-Sec-11.svg",
+        "hotspots": [
+          {
+            "xPercent": 68.9,
+            "yPercent": 29.5,
+            "width": 18.3,
+            "height": 7.9,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "В настройках по каждой организации можно выбрать систему налогообложения.<br><br>В зависимости от выбранной системы, в календаре будут отображаться различные наборы отчётов.<br><br>Также можно вручную добавить или убрать отображение определённого отчета по выбранной организации.",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 12,
+        "image": "Acc-Sec-12.svg",
+        "hotspots": [
+          {
+            "xPercent": 0.2,
+            "yPercent": 30.5,
+            "width": 16.0,
+            "height": 5.3,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Отчёты»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 13,
+        "image": "Acc-Sec-13.svg",
+        "hotspots": [
+          {
+            "xPercent": 0.1,
+            "yPercent": 40.8,
+            "width": 15.6,
+            "height": 5.3,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Черновики - отчёты, которые созданы, но не отправлены",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 14,
+        "image": "Acc-Sec-14.svg",
+        "hotspots": [
+          {
+            "xPercent": 23.4,
+            "yPercent": 19.9,
+            "width": 5.6,
+            "height": 4.9,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Отправленные - отчёты, которые были отправлены в контролирующие органы<br><br>Отчёты можно отсортировать по контролирующему органу",
+            "invisible": false
+          },
+          {
+            "xPercent": 80.1,
+            "yPercent": 20,
+            "width": 11.3,
+            "height": 4.6,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Отчёты можно отсортировать по названию отчёта",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 15,
+        "image": "Acc-Sec-15.svg",
+        "hotspots": [
+          {
+            "xPercent": 0.3,
+            "yPercent": 46.9,
+            "width": 16.3,
+            "height": 5.6,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Перейдём в требования",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 16,
+        "image": "Acc-Sec-16.svg",
+        "hotspots": [
+          {
+            "xPercent": 0.4,
+            "yPercent": 47.9,
+            "width": 15.3,
+            "height": 5.8,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "На вкладке «Требования» находятся все требования, которые поступили в адрес организаций<br><br>Здесь можно отслеживать статусы требований, сроки по ответам, а также статусы ответов на требования",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 17,
+        "image": "Acc-Sec-17.svg",
+        "hotspots": [
+          {
+            "xPercent": 0.4,
+            "yPercent": 62.7,
+            "width": 11.0,
+            "height": 5.3,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "На вкладке «Письма» находятся входящие и отправленные письма, а также рассылка от контролирующих органов",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 18,
+        "image": "Acc-Sec-18.svg",
+        "hotspots": [
+          {
+            "xPercent": 0.5,
+            "yPercent": 19,
+            "width": 10.4,
+            "height": 5.6,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "На вкладке «Запросы» находятся входящие выписки ЕГРЮЛ/ЕГРИП и Макеты ПД (пенсионных дел)<br><br>Вернемся на главную страницу",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 19,
+        "image": "Acc-Sec-19.svg",
+        "hotspots": [
+          {
+            "xPercent": 74.8,
+            "yPercent": 11.4,
+            "width": 3.5,
+            "height": 5.5,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите на значок «Ключ»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 20,
+        "image": "Acc-Sec-20.svg",
+        "hotspots": [
+          {
+            "xPercent": 55.7,
+            "yPercent": 37.8,
+            "width": 18.0,
+            "height": 14.2,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Здесь можно посмотреть, есть ли какие-то нерасшифрованные сообщения по организациям",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 21,
+        "image": "Acc-Sec-21.svg",
+        "hotspots": [
+          {
+            "xPercent": 90.5,
+            "yPercent": 11.4,
+            "width": 9.1,
+            "height": 5.3,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите на «Название организации»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 22,
+        "image": "Acc-Sec-22.svg",
+        "hotspots": [
+          {
+            "xPercent": 86.5,
+            "yPercent": 17.4,
+            "width": 10.2,
+            "height": 4.2,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Организации»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 23,
+        "image": "Acc-Sec-23.svg",
+        "hotspots": [
+          {
+            "xPercent": 35.8,
+            "yPercent": 29.8,
+            "width": 28.3,
+            "height": 19.2,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "В данном блоке можно посмотреть общую информацию по организациям",
+            "invisible": true
+          }
+        ]
+      },
+      {
+        "step": 24,
+        "image": "Acc-Sec-23.svg",
+        "hotspots": [
+          {
+            "xPercent": 89.5,
+            "yPercent": 69.1,
+            "width": 8.2,
+            "height": 4.4,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Посмотреть»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 25,
+        "image": "Acc-Sec-25.svg",
+        "hotspots": [
+          {
+            "xPercent": 33.8,
+            "yPercent": 37.7,
+            "width": 16.7,
+            "height": 26.7,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "В этом окне отображается общая информация по подключенным организациям<br><br>Мы рассмотрели все вкладки личного кабинета",
+            "invisible": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sendReportsToProf",
+    "title": "Личный кабинет 1С-Отчетность",
+    "name": "Отправка отчетов на ЛК ПРОФ”",
+    "completeText": "Теперь вы знаете,//n как отправить отчёт на ЛК ПРОФ",
+    "scenarioCategory": "1cReportAccount",
+    "steps": [
+      {
+        "step": 1,
+        "image": "Prof-LC-1.svg",
+        "hotspots": [
+          {
+            "xPercent": 9.9,
+            "yPercent": 16.0,
+            "width": 4.7,
+            "height": 3.4,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Отправка отчёта с подписанием в Личном кабинете (ЛК ПРОФ)<br><br>Нажмите «Создать»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "image": "Prof-LC-2.svg",
+        "hotspots": [
+          {
+            "xPercent": 9.4,
+            "yPercent": 63.8,
+            "width": 11.7,
+            "height": 2.6,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Расчёт по страховым взносам»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "image": "Prof-LC-3.svg",
+        "hotspots": [
+          {
+            "xPercent": 36.8,
+            "yPercent": 39,
+            "width": 5.5,
+            "height": 3.5,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Выберите организацию и нажмите кнопку «Создать»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "image": "Prof-LC-4.svg",
+        "hotspots": [
+          {
+            "xPercent": 10.1,
+            "yPercent": 9.3,
+            "width": 5.0,
+            "height": 3.3,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Записать»",
+            "invisible": false
+          },
+          {
+            "xPercent": 9.1,
+            "yPercent": 2.7,
+            "width": 6.4,
+            "height": 3.2,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "start",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «1С-отчетность»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "image": "Prof-LC-5.svg",
+        "hotspots": [
+          {
+            "xPercent": 67.5,
+            "yPercent": 49.2,
+            "width": 2.2,
+            "height": 3.0,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите дважды на значок Личного кабинета или скопируйте ссылку правой кнопкой мыши",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "image": "Prof-LC-6.svg",
+        "hotspots": [
+          {
+            "xPercent": 75.6,
+            "yPercent": 83.6,
+            "width": 7.1,
+            "height": 4.8,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Откроется Личный кабинет. Для того, чтобы подписать и отправить отчёт, нажмите на кнопку «Отправить»<br><br>ВНИМАНИЕ: на рабочем месте, где открывают личный кабинет, должна быть доступна ЭП для подписания отчёта",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "image": "Prof-LC-7.svg",
+        "hotspots": [
+          {
+            "xPercent": 0.5,
+            "yPercent": 41,
+            "width": 13.8,
+            "height": 4.9,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Документ был отправлен. Чтобы посмотреть отчёт перейдите в «Отправленные»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 8,
+        "image": "Prof-LC-8.svg",
+        "hotspots": [
+          {
+            "xPercent": 43.1,
+            "yPercent": 40.9,
+            "width": 16.4,
+            "height": 24.8,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Входящие сообщения можно расшифровать в Личном кабинете при наличии электронной подписи",
+            "invisible": true
+          }
+        ]
+      },
+      {
+        "step": 9,
+        "image": "Prof-LC-9.svg",
+        "hotspots": [
+          {
+            "xPercent": 10.3,
+            "yPercent": 9.9,
+            "width": 5.4,
+            "height": 3.3,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "start",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Обновить» для обмена информацией с Личным кабинетом и расшифровкой входящих сообщений",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 10,
+        "image": "Prof-LC-10.svg",
+        "hotspots": [
+          {
+            "xPercent": 37.6,
+            "yPercent": 86.7,
+            "width": 3.2,
+            "height": 3.2,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Статус отчета изменился. <br><br>Нажмите на статус, чтобы открыть этапы отправки отчёта",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 11,
+        "image": "Prof-LC-11.svg",
+        "hotspots": [
+          {
+            "xPercent": 38.6,
+            "yPercent": 62.6,
+            "width": 7.2,
+            "height": 2.9,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Чтобы просмотреть «Извещение о вводе», нажмите «Извещение о вводе»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 12,
+        "image": "Prof-LC-12.svg",
+        "hotspots": [
+          {
+            "xPercent": 58.7,
+            "yPercent": 72.3,
+            "width": 18.2,
+            "height": 8.5,
+            "tooltipPosition": "left",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "В личном кабинете информация синхронизируется в режиме реального времени",
+            "invisible": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sendReportsToBasic",
+    "title": "Личный кабинет 1С-Отчетность",
+    "name": "Отправка отчетов на ЛК Базовый”",
+    "completeText": "Теперь вы знаете,//n как отправить отчёт на ЛК Базовый",
+    "scenarioCategory": "1cReportAccount",
+    "steps": [
+      {
+        "step": 1,
+        "image": "Bas-LC-1.svg",
+        "hotspots": [
+          {
+            "xPercent": 10.1,
+            "yPercent": 16.1,
+            "width": 4.5,
+            "height": 3.2,
+            "tooltipPosition": "right",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Отправка отчёта с подписанием в 1С (ЛК Базовый)<br><br> Нажмите «Создать»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "image": "Bas-LC-2.svg",
+        "hotspots": [
+          {
+            "xPercent": 12.0,
+            "yPercent": 40.0,
+            "width": 7.0,
+            "height": 3.0,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Декларация по НДС»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 3,
+        "image": "Bas-LC-3.svg",
+        "hotspots": [
+          {
+            "xPercent": 32.6,
+            "yPercent": 41.9,
+            "width": 4.5,
+            "height": 3.2,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Выберите организацию и нажмите «Создать»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 4,
+        "image": "Bas-LC-4.svg",
+        "hotspots": [
+          {
+            "xPercent": 10.0,
+            "yPercent": 9.3,
+            "width": 5.2,
+            "height": 3.4,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Записать»",
+            "invisible": false
+          },
+          {
+            "xPercent": 36.9,
+            "yPercent": 9.3,
+            "width": 4.9,
+            "height": 3.1,
+            "tooltipPosition": "bottom",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Отправить»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 5,
+        "image": "Bas-LC-5.svg",
+        "hotspots": [
+          {
+            "xPercent": 28.76,
+            "yPercent": 48,
+            "width": 1.3,
+            "height": 2.2,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Поставьте галочку",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 6,
+        "image": "Bas-LC-6.svg",
+        "hotspots": [
+          {
+            "xPercent": 39.7,
+            "yPercent": 51.4,
+            "width": 5.6,
+            "height": 3.0,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Отправить»<br><br>Внимание: В этом случае электронная подпись для подписания отчётности должна быть доступна на устройстве",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 7,
+        "image": "Bas-LC-7.svg",
+        "hotspots": [
+          {
+            "xPercent": 41.2,
+            "yPercent": 47.5,
+            "width": 5.6,
+            "height": 3.2,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "Нажмите «Закрыть»",
+            "invisible": false
+          }
+        ]
+      },
+      {
+        "step": 8,
+        "image": "Bas-LC-8.svg",
+        "hotspots": [
+          {
+            "xPercent": 71.4,
+            "yPercent": 30.2,
+            "width": 5.5,
+            "height": 7.5,
+            "tooltipPosition": "top",
+            "tooltipAlign": "center",
+            "tooltipTitle": "",
+            "tooltipText": "В личном кабинете отчёт отобразился и статус документа поменялся на «Отправлен»",
+            "invisible": false
+          }
+        ]
+      }
+    ]
   }
 ]
 
