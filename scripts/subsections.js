@@ -39,7 +39,7 @@ function loadSubsections() {
         window.location.href = "index.html";
       });
       const img = document.createElement('img');
-      img.src = '../assets/icons/exitButton.svg';
+      img.src = 'assets/icons/exitButton.svg';
       img.alt = 'Выход';
       img.style.width = '24px';
       img.style.height = '24px';
